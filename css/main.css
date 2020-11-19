@@ -1,0 +1,96 @@
+:root {
+    --violeta-suave: hsl(273, 75%, 66%);
+    --azul-suave: hsl(240, 73%, 65%);
+    --titulo: hsl(238, 29%, 16%);
+    --arrow: hsl(14, 88%, 65%);
+    --texto: hsl(237, 12%, 33%);
+    --titulo-desactivado: hsl(240, 6%, 50%);
+    --lineas: hsl(240, 5%, 91%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(var(--violeta-suave), var(--azul-suave));
+    background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/* ------------------------------------ MAIN PAGE ------------------------------------ */
+.main {
+    width: 65%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 5.2rem;
+    padding: 40px 0;
+}
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+.main__container-left {
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    padding: 45px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-x: -8px;
+}
+.main__img {
+    position: relative;
+}
+.main__box {
+    position: absolute;
+    right: 72%;
+    top: 41.5%;
+    width: 180px;
+}
+.main__title {
+    font-size: 28px;
+}
+.main__faq-group {
+    margin: 15px 71px 15px 0;
+    border-bottom: 1px solid var(--lineas);
+    transition: 900ms;
+}
+.main__faq-title {
+    font-size: 14px;
+    padding: 8px 0 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    color: var(--titulo);
+    cursor: pointer;
+    line-height: 1.35;
+}
+.main__faq-title:hover {
+    color: var(--arrow);
+}
+.main__arrow {
+    transform: rotate(360deg);
+}
+.main__faq-text {
+    display: none;
+    font-size: 12px;
+    padding-bottom: 18px;
+    line-height: 1.5;
+}
+/* ------------------------------------ MEDIA QUERIES ------------------------------------ */
+@media screen and (max-width: 768px) {
+
+
+
+}
